@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewController3.swift
 //  HelloWorld005
 //
 //  Created by Aaron ALAYO on 07/02/2020.
@@ -8,15 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController3: UIViewController {
 
+    @IBOutlet weak var customerName: UITextField!
+    
+    @IBOutlet weak var customerComment: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func sendButton(_ sender: UIButton) {
+        if let cName = customerName.text{
+            print(cName)
+        }
+        if let cComment = customerComment.text{
+            print(cComment)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
